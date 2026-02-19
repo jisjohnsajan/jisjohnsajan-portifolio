@@ -530,6 +530,7 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
+/* Responsive */
 @media (max-width: 968px) {
     nav {
         position: absolute;
@@ -603,6 +604,7 @@ footer p {
     }
 }
 
+/* Smooth Animations */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -615,6 +617,7 @@ footer p {
 }
 
 
+/* Active nav link */
 nav a.active {
     color: var(--primary);
     font-weight: 600;
@@ -622,12 +625,14 @@ nav a.active {
     padding-bottom: 2px;
 }
 
-#about, #skills, #education, #certifications, #contact {
+/* Extra top padding for inner pages so heading clears the fixed header */
+#about, #skills, #projects, #education, #certifications, #contact {
     padding-top: 160px;
 }
 
 #projects {
     padding-bottom: 40px;
+    /* Less bottom padding to reduce space after projects */
 }
 
 /* Coming Soon / Add More Tiles */
@@ -755,4 +760,17 @@ nav a.active {
     font-size: 0.85rem;
     color: var(--text-gray);
     margin: 0;
+}
+
+/* Secondary CTA Button (for Resume) */
+.cta-button-secondary {
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.cta-button-secondary:hover {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
 }
